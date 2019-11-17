@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <title>Impressum</title>
+	
+	<style>
+	.footer{
+		/* background-color:rgb(25,30,34); */
+		background-color: #f0f0f0;
+		color:rgb(130,134,137);
+		padding: 20px 0;
+		text-align: center;
+		overflow: hidden;
+	}
+
+	.footer span{
+		float: left;
+	}
+
+	.footer .social{
+		list-style: none;
+		padding-left:0;
+		margin: 10px 0 0 ;
+		float: right;
+	}
+
+	.footer ul li{
+		display: inline-block;
+		padding: 2px
+	}
+
+	.footer ul li img{
+		border: 1px;
+		border-radius:4px;
+	}
+	</style>
+</head>
+
+<body>
+<!--  Start Upper Bar -->
+<!-- Start Nav bar  -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <span>Imkerverein </span><br/><span>56242 Selters und Umgebung</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="main-nav">
+            <ul class="navbar-nav ml-auto" id="myDIV">
+			
+                <!-- li class="nav-item">
+                    <a class="nav-link einfuer" href="#">Über Uns </a>
+                </li -->
+				
+				<li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true"
+                       aria-expanded="false">
+                        Über Uns <span class="sr-only"></span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item exakte" href="/">Westerwald Verein</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item heuristische" href="#">Freundeskreis</a>
+						<div class="dropdown-divider"></div>
+                        <a class="dropdown-item heuristische" href="/kontakt">Kontakte</a>
+                    </div> 
+                </li>
+				
+				
+                <!-- li class="nav-item">
+                    <a class="nav-link anwendun" href="#">Events</a>
+                </li -->
+				
+				 <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true"
+                       aria-expanded="false">
+                        Events <span class="sr-only"></span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item exakte" href="#">Veranstaltungen</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item heuristische" href="#">Kurse</a>
+                    </div>
+                </li>
+				
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true"
+                       aria-expanded="false">
+                        Projekte <span class="sr-only">(current)</span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item exakte" href="#">Schulprojekt</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item heuristische" href="#">Allgemeine Projekte</a>
+                    </div>
+                </li>
+                <!--<li class="nav-item">-->
+                    <!--<a class="nav-link observat" href="#">Observation</a>-->
+                <!--</li>-->
+                <!-- li class="nav-item">
+                    <a class="nav-link" href="/implementierung">Aktiv werden</a>
+                </li -->
+				
+				 <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true"
+                       aria-expanded="false">
+                        Aktiv werden <span class="sr-only"></span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item exakte" href="#">Mitglied werden</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item heuristische" href="#">Insektenhotels</a>
+                    </div>
+                </li>
+				 <!-- li class="nav-item"> 
+                    <a class="nav-link" href="/implementierung">Die Biene</a>
+                </li -->
+
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--Start Algorithm Implementation-->
+<div class="startBody">
+    <div class="implementierung">
+        <div class="container">
+            <div class="myHeading">
+                <h2 class="implemen" id="impl"> Impressum</h2>
+            </div>
+            <p>
+                Yassine Chakri<br/>
+				Abdelghafour el Oufiri<br/>
+                Grantham-Allee 20 <br/>
+                53757 Sankt Augustin<br/>
+                Germany
+            </p>
+            <h4> Kontakt </h4>
+            <p>
+                Handy: +49 (0)8104 909 50 0<br/>
+                E-Mail: <a href="mailto:dict@leo.org" class="c-link">yassine_chakri@yahoo.de</a>
+            </p>
+        </div>
+    </div>
+
+</div>
+<div class ="footer">
+	<div class="bd-footer text-muted">
+		<div class="container">
+			<ul class="bd-footer-links">
+				<!-- li><a href="https://github.com/ychakr2s/WebAbschlussRepository">GitHub</a></li -->
+				<li><a href="/kontakt">Kontakt</a></li>
+				<!-- li><a href="">References</a></li -->
+				<li><a href="/impressum">Impressum</a></li> 
+			</ul>
+			
+			
+			
+			<ul class = "social">
+						<li><i class="fa fa-youtube-square"></i></li> 
+						<li><img src="images/snapchat.png" style="height:26px; width:26px;" alt=""/></li>
+						<li><img src="images/twitter.png" style="height:26px; width:26px;" alt=""/></li>
+						<li><img src="images/facebook.png" style="height:26px; width:26px;" alt=""/></li>
+			</ul>
+			
+			<p>Entworfen und gebaut mit all der Liebe der Welt von @Sabeer.</p>
+		</div>
+	</div>
+</div>
+<script src="js/jquery-3.4.0.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+<script language="javascript" type="text/javascript">
+    //<![CDATA[
+    $(document).ready(function () {
+        $(function () {
+            'use strict';
+            // HEADER: Adjust Slider Height
+            var windowHeigh = $(window).height();
+
+           // var upperH = $('.upper-bar').innerHeight();
+            var nav = $('.navbar').innerHeight();
+            var footer = $('.footer').innerHeight();
+            $('.startBody').height(windowHeigh - (nav+footer));
+        });
+// ++++++++++++++++++++++++++ End Change the Color if the link is clicked ++++++++++++++++++++++++++++++++++++++++++//
+    });
+
+    //]]>
+
+</script>
+<!--noch weiter-->
+
+</body>
+</html>

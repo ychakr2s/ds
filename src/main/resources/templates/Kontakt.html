@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+
+    <title>Imkerverein</title>
+	<style>
+	
+/* Start Contact Me*/
+body {
+background-color: #a9a9a9;
+}
+.contact{
+    overflow: hidden;
+    padding-top: 55px;
+    padding-bottom: 50px;
+	height: 100%;
+}
+.contact .info{
+    width: 50%;
+    float: left;
+    margin-right: 5%;
+}
+.contact h3 {
+    color: #FFF;
+    margin-left: 40px
+}
+.contact p { 
+    color:rgb(130,134,137);
+    margin-left: 40px;
+    line-height: 1.6
+}
+.contact p strong{
+    color: rgb(215,220,223);
+}
+
+.contact .form {
+    margin-top: 36px;
+    width: 45%;
+    float: left;    
+}
+
+.contact .form label{
+    display: block;
+    color: rgb(215,220,223);
+    margin: 10px 0;
+}
+.contact .form input[type="text"],
+.contact .form input[type="email"]
+{
+    background-color: rgb(75,85,87); 
+    color: #FFF;
+    padding: 10px;
+    border: 0;
+    width: 70%;
+}
+.contact .form textarea{
+    background-color: rgb(75,85,87);
+    color: #FFF;
+    padding: 10px;
+    border: 0;
+    width: 70%;
+    margin-bottom: 10px;
+    height: 250px
+}
+
+.contact .form input[type="submit"]{
+    background-color: rgb(25,30,34);
+    color: #FFF;
+    padding: 10px 20px;
+    border: 1px;
+    margin-top: 18px;
+    margin-bottom: 1px;
+	border-radius: 3px;
+}
+
+/* End Contact Me*/
+
+/* Start Footer 
+.footer{
+    /* background-color:rgb(25,30,34); */
+	background-color: #f0f0f0;
+    color:rgb(130,134,137);
+    padding: 20px 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+.footer span{
+    float: left;
+}
+
+.footer .social{
+    list-style: none;
+    padding-left:0;
+    margin: 10px 0 0 ;
+    float: right;
+}
+
+.footer ul li{
+    display: inline-block;
+    padding: 2px
+}
+
+.footer ul li img{
+    border: 1px;
+    border-radius:4px;
+}
+
+ End Footer */
+   
+
+    </style>
+</head>
+<body>
+<!-- Start Nav bar  -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <span>Imkerverein </span><br/><span>56242 Selters und Umgebung</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="main-nav">
+            <ul class="navbar-nav ml-auto" id="myDIV">
+			
+                <!-- li class="nav-item">
+                    <a class="nav-link einfuer" href="#">Über Uns </a>
+                </li -->
+				
+				<li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true"
+                       aria-expanded="false">
+                        Über Uns <span class="sr-only"></span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item westerwald" href="/">Westerwald Verein</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item heuristische" href="#">Freundeskreis</a>
+						<div class="dropdown-divider"></div> 
+                        <a class="dropdown-item heuristische" href="/kontakt">Kontakte</a>
+                    </div>
+                </li>
+				
+				
+                <!-- li class="nav-item">
+                    <a class="nav-link anwendun" href="#">Events</a>
+                </li -->
+				
+				 <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true"
+                       aria-expanded="false">
+                        Events <span class="sr-only"></span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item exakte" href="#">Veranstaltungen</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item heuristische" href="#">Kurse</a>
+                    </div>
+                </li>
+				
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true"
+                       aria-expanded="false">
+                        Projekte <span class="sr-only">(current)</span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item exakte" href="#">Schulprojekt</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item heuristische" href="#">Allgemeine Projekte</a>
+                    </div>
+                </li>
+                <!--<li class="nav-item">-->
+                    <!--<a class="nav-link observat" href="#">Observation</a>-->
+                <!--</li>-->
+                <!-- li class="nav-item">
+                    <a class="nav-link" href="/implementierung">Aktiv werden</a>
+                </li -->
+				
+				 <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true"
+                       aria-expanded="false">
+                        Aktiv werden <span class="sr-only"></span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item exakte" href="#">Mitglied werden</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item heuristische" href="#">Insektenhotels</a>
+                    </div>
+                </li>
+				 <!-- li class="nav-item">
+                    <a class="nav-link" href="/implementierung">Die Biene</a>
+                </li -->
+
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--Start Contact Me-->
+        <div class="contact">
+            <div class="container">
+                <div class="info"> 
+                    <h3>Kontaktieren Sie Uns</h3>
+                    <p>Falls Sie noch Fragen haben oder weitere Auskünfte benötigen, dann wenden Sie sich bitte vertrauensvoll an mich. <br />Ob Sie Fragen zu Ihrem Vertrag haben, einen Schaden melden möchten oder Rat suchen - rufen Sie uns an!
+                    </p>
+                    <p> 
+                        Imkerverein<br/>
+                        Am Wichelshof 32 <br/>
+                        53111 Bonn
+                    </p>
+                    <p>
+                        <strong>Email:</strong>yassine_chakri@yahoo.de <br/>
+                        <span style="margin-left:49px;margin-right:15px;">eloufiri@web.de</span>          	 <br/>
+                        <strong>Phone:</strong> 01767824633
+                    </p>
+                </div>
+                <form class="form">
+                    <label>Vorname *</label>
+                    <input type="text"/>
+                    <label>Nachname *</label>
+                    <input type="text"/>
+                    <label>Email-Adresse *</label>
+                    <input type="email"/>
+                    <label>phone</label>
+                    <input type="text"/>
+                    <label>Message *</label>
+                    <textarea></textarea><br/>
+                    <input type="submit" value="Submit"/>
+                </form>
+            </div>
+        </div>
+        <!--End Contact Me-->
+        
+        <!-- Start Footer -->
+<div class ="footer">
+<div class="bd-footer text-muted">
+    <div class="container">
+        <ul class="bd-footer-links">
+            <!-- li><a href="https://github.com/ychakr2s/WebAbschlussRepository">GitHub</a></li -->
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <!-- li><a href="">References</a></li -->
+            <li><a href="impressum.html">Impressum</a></li>
+        </ul>
+		
+		
+        
+		<ul class ="social">
+                    <li><i class="fa fa-youtube-square"></i></li> 
+                    <li><img src="images/snapchat.png" style="height:26px; width:26px;" alt=""/></li>
+                    <li><img src="images/twitter.png" style="height:26px; width:26px;" alt=""/></li>
+                    <li><img src="images/facebook.png" style="height:26px; width:26px;" alt=""/></li>
+        </ul>
+		
+		<p>Entworfen und gebaut mit all der Liebe der Welt von @Sabeer.</p>
+    </div>
+</div>
+</div>
+
+        <!-- div class ="footer">
+            <div class ="container">
+                <ul class="bd-footer-links">
+                < li><a href="https://github.com/ychakr2s/WebAbschlussRepository">GitHub</a></li>
+                <li><a href="#">About</a></li >
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="impressum.html">Impressum</a></li>
+
+            </ul>
+            <p>Entworfen und gebaut mit all der Liebe der Welt von @Yassine Chakri.</p >
+                <ul>
+                    <li><i class="fa fa-youtube-square"></i></li>
+                    <li><img src="images/snapchat.png" style="height:26px; width:26px;" alt=""></li>
+                    <li><img src="images/twitter.png" style="height:26px; width:26px;" alt=""></li>
+                    <li><img src="images/facebook.png" style="height:26px; width:26px;" alt=""></li>
+                </ul>
+            </div>
+        </div -->
+<script src="js/jquery-3.4.0.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+<script language="javascript" type="text/javascript">
+    //<![CDATA[
+    $(document).ready(function () {
+// ++++++++++++++++++++++++++ End Change the Color if the link is clicked ++++++++++++++++++++++++++++++++++++++++++//
+        var matrix = [];
+
+        $("#grid").fadeIn(900);
+        var header = document.getElementById("myDIV");
+        var btns = header.getElementsByClassName("nav-item");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+
+        console.log("Salam i am from Ready jQuery: ", matrix);
+    });
+
+    //]]>
+
+</script>
+<!--noch weiter-->
+</body>
+</html>

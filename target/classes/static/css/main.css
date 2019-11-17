@@ -1,0 +1,261 @@
+/*
+Theme Name: Yassine Chakri
+*/
+
+/* ------------------------------------------Start NAV BAR ---------------------------------------------------- */
+.navbar-brand > span {
+    font-size: 30px;
+}
+
+.navbar-brand span:first-child {
+    font-weight: bold;
+    color: #08526d;
+}
+
+.navbar-brand span:last-child {
+    color: #ec1c23;
+}
+
+.navbar-nav .nav-link {
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-left: 20px;
+    color: #08526d;
+    font-weight: bold;
+}
+
+.navbar-nav .active > .nav-link {
+    color: #ec1c23 !important
+}
+
+.dropdown-item {
+    width: auto;
+}
+
+h3 {
+    margin-top: 10px;
+}
+
+/* ------------------------------------------End NAV BAR ---------------------------------------------------- */
+/* ------------------------------------------Start Slider ---------------------------------------------------- */
+.slider {
+    background-color: #DDD;
+}
+
+.slider .carousel-inner {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.slider .carousel-inner h2 {
+    position: absolute;
+    color: #FFF;
+    z-index: 3;
+    font-size: 40px;
+    font-weight: normal;
+    max-width: 1000px;
+    left: 75px;
+    line-height: 1.5;
+}
+
+.slider .carousel-inner h2 span {
+    color: #f8f9fa;
+    font-weight: bold;
+    font-style: oblique;
+    z-index: 3;
+    display: inline-block;
+}
+
+.slider .carousel-inner h2 span span {
+    background-color: #ec1c23;
+    padding: 2px 8px;
+    border-radius: 10px;
+}
+
+.slider .carousel-inner .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, .3);
+    z-index: 2;
+}
+
+.slider .carousel-item {
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.slider .carousel-one {
+    background-image: url('../images/slid.png');
+}
+
+.slider .carousel-two {
+    background-image: url('../images/bee2.png');
+}
+
+.slider .carousel-three {
+    background-image: url('../images/Apishonig.png');
+}
+
+.slider .carousel-four {
+    background-image: url('../images/bee.png');
+}
+
+.slider .carousel-indicators li {
+    height: 6px;
+    cursor: pointer;
+}
+
+/* ------------------------------------------ Start Slider for implementeirung -------------------------------*/
+.slider .carousel-twwo {
+    background-image: url('../images/Graph.jpg');
+}
+
+.slider .carousel-thhree {
+    background-image: url('../images/sudoku4.png');
+}
+
+.slider .carousel-foour {
+    background-image: url('../images/Graph1.jpg');
+}
+
+/* ------------------------------------------ End Slider for implementierung ----------------------------------*/
+/*  ----------------------------------------- End Slider ------------------------------------------------------------*/
+
+/*  ----------------------------------------- Start Über ----------------------------------------------------*/
+.startBody .myHeading h1 {
+    font-size: 2em;
+    font-weight: 700;
+    line-height: 1.25em;
+    color: #4c4a4a;
+    margin-top: 0.9em !important;
+    padding-bottom: .4em;
+    border-bottom: 2px solid #4267b2;
+}
+
+.startBody .myHeading h2 {
+    font-size: 1.5em;
+    font-weight: 600;
+    line-height: 1.25em;
+    color: #24292e;
+    padding-bottom: .4em;
+    border-bottom: 2px solid #a9d6f2;
+    display: block;
+    margin-top: 1em !important;
+}
+
+.startBody .myHeading h3 {
+    font-size: 1.18em;
+    font-weight: 600;
+    line-height: 1.25;
+    margin-bottom: 16px;
+    margin-top: 24px;
+}
+
+.startBody span {
+    font-size: 1em;
+    font-weight: bold;
+    color: #08526d;
+}
+
+.startBody h4 {
+    font-size: 1.1em;
+    font-weight: 600;
+    line-height: 1.25;
+    margin-bottom: 11px;
+    margin-top: 19px;
+}
+
+.startBody .myHeading h3 {
+    padding-bottom: 0.3em;
+    border-bottom: 1px solid #eaecef;
+}
+
+.implementierung .myHeading p {
+    font-family: 'Quattrocento', serif;
+    line-height: 1.8em;
+    color: #444;
+    font-size: 119%;
+}
+
+ 
+/* ---------------------------------- Start footer ----------------------------------- */
+
+/* footer {
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height:0px;
+   width:100%;
+   background:#999;
+} */
+
+.bd-footer {
+    padding: 4rem 0;
+    margin-top: 4rem;
+    font-size: 85%;
+    text-align: center;
+    background-color: #f7f7f7;
+}
+
+.footer {
+    display: block;
+}
+
+.container {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.bd-footer {
+    padding: 4rem 0;
+    margin-top: 4rem;
+    font-size: 85%;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+.bd-footer {
+    text-align: right;
+}
+
+.bd-footer-links {
+    padding-left: 0;
+    margin-bottom: 1rem;
+	float: left;
+}
+
+.bd-footer-links li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.bd-footer a {
+    font-weight: 500;
+    color: #464a4c;
+}
+
+.bd-footer p {
+    margin-bottom: 2rem;
+	text-align: center;
+}
+
+
+/* IE 6 
+* html footer {
+   position:absolute;
+   top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
+}
+*/
+
+/* ------------------------------- End footer -----------------------------------  */

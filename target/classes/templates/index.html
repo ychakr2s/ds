@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+
+    <title>Imkerverein</title>
+</head>
+<body>
+<!--  Start Upper Bar -->
+<!-- div class="upper-bar">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <i class="fa fa-envelope"></i> <span>yassine.chakri@smail.inf.h-brs.de</span>
+            </div>
+            <div class="col-sm text-right bs">
+                Bachelorarbeit im Studiengang Informatik
+            </div>
+            <div class="col-sm">
+                <span class="get-quote"><a class="hbsNavbar" target="_blank" href="https://www.h-brs.de/de"> Hochschule Bonn-Rhein-Sieg  </a></span>
+            </div>
+        </div>
+    </div>
+</div -->
+
+<!-- End Upper Bar -->
+<!-- Start Nav bar  -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <span>Imkerverein </span> <br/> <span>56242 Selters und Umgebung</span>
+        </a> 
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"> </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="main-nav">
+            <ul class="navbar-nav ml-auto" id="myDIV">
+			
+                <!-- li class="nav-item">
+                    <a class="nav-link einfuer" href="#">Über Uns </a>
+                </li -->
+				
+				<li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true"
+                       aria-expanded="false">
+                        Über Uns <span class="sr-only"></span> 
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item westerwald" href="#">Westerwald Verein</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item heuristische Ich muss hier Freundeskreis schreiben" href="#">Freundeskreis</a>
+						<div class="dropdown-divider"></div>
+                        <a class="dropdown-item heuristische" href="/kontakt">Kontakte</a>
+                    </div>
+                </li>
+				
+	
+				 <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true"
+                       aria-expanded="false">
+                        Events <span class="sr-only"></span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item exakte" href="#">Veranstaltungen</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item heuristische" href="#">Kurse</a>
+                    </div>
+                </li>
+				
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true"
+                       aria-expanded="false">
+                        Projekte <span class="sr-only">(current)</span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item exakte" href="#">Schulprojekt</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item heuristische" href="#">Allgemeine Projekte</a>
+                    </div>
+                </li>
+               
+				 <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true"
+                       aria-expanded="false">
+                        Aktiv werden <span class="sr-only"></span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item exakte" href="#"> Mitglied werden </a>
+                        <div class="dropdown-divider"> </div>
+                        <a class="dropdown-item heuristische" href="#"> Insektenhotels </a>
+                    </div>
+                </li>
+				 <!-- li class="nav-item">
+                    <a class="nav-link" href="/implementierung">Die Biene</a>
+                </li -->
+
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- End Nav Bar  -->
+
+<!--  Start Slider -->
+<div class="slider">
+    <div id="main-slider" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <h2><span>Die Gegeschichte der <span id="firstt">
+            Biene</span></span>
+            </h2>
+            <div class="overlay"></div>
+            <div class="carousel-item carousel-one active">
+            </div>
+            <div class="carousel-item carousel-two">
+            </div>
+            <div class="carousel-item carousel-three">
+            </div>
+            <div class="carousel-item carousel-four">
+            </div>
+        </div>
+        <ol class="carousel-indicators">
+            <li data-target="#main-slider" data-slide-to="0" class="active"></li>
+            <li data-target="#main-slider" data-slide-to="1"></li>
+            <li data-target="#main-slider" data-slide-to="2"></li>
+            <li data-target="#main-slider" data-slide-to="3"></li>
+        </ol>
+
+    </div>
+</div>
+<!--  End Slider  -->
+<!--  Start Einfuerung  -->
+<div class="startBody">
+    <div class="einfuerung">
+        <div class="container">
+            <div class="myHeading this">
+                <h1 class="west">Westerwald Verein</h1>
+                <h2 >Wer sind wir</h2>
+                <p  align="justify">Der „Imkerverein Selters und Umgebung“ besteht aus seinem Vorstand und ca. 20 Mitgliedern. 
+				</p> <img src="images/manufact.png" alt="Graph Coloring"/>
+								<br/><br/>
+								<p>
+				Die Mitglieder wohnen größtenteils innerhalb der Verbandsgemeinde Selters. Unter den Mitgliedern befinden sich auch mehrere Imkerinnen.
+									Die Mitglieder bewirtschaften insgesamt ca. 130 Bienenvölker.</p>
+
+                <img src="images/imker.png" alt="Graph Coloring 2" />
+				<br/>
+                <br/>
+
+                <p align="justify">Der Mitgliedsbeitrag beträgt zur Zeit 34 € jährlich plus 25 Cent pro Bienenvolk Werbebeitrag. In diesem Beitrag ist die für Imker unverzichtbare Imkerversicherung (Globalversicherung, Unfallversicherung und Rechtsschutzversicherung) eingeschlossen. (Passive Mitglieder – ohne Bienen und ohne Versicherung- zahlen 23,28 €) Der Imkerverein 56242 Selters und Umgebung ist Mitglied im Kreisimkerverband Unterwesterwald, im Imkerlandesverband Nassau e. V. und im Deutschen Imkerbund.
+				</p>
+				<h2 class="einf">Die Geschichte im Selters</h2>
+				<p align="justify"> Die Geschichte der Biene schreibt der Abdel. 
+				</p>
+
+            </div>
+        </div>
+    </div> 
+    <!--  End Einfuerung  >
+    < Start Anwendung  >
+    <div class="anwendung">
+        <div class="container">
+            <div class="myHeading this">
+                <h2 class="anwend">Anwendungen</h2>
+                <h3>Scheduling</h3>
+                <p align="justify">Vertex-Modelle für eine Reihe von Planungsproblemen. In der saubersten Form muss ein bestimmter Satz von Jobs Zeitfenstern zugewiesen werden, jeder Job erfordert einen solchen Slot. Jobs können in beliebiger Reihenfolge eingeplant werden. Jobpaare können jedoch in einem Konflikt miteinander stehen, dass sie möglicherweise nicht demselben Zeitfenster zugewiesen werden, z. B. weil beide auf einer gemeinsam genutzten Ressource basieren. Der entsprechende Graph enthält einen Knoten für jeden Job und eine Kante für jedes in Konflikt stehende Jobpaar. Die Farbzahl des Graphen ist genau die minimale Zeitspanne, die optimale Zeit, um alle Jobs ohne Konflikte zu beenden.</p>
+                <p align="justify">Details zum Planungsproblem definieren die Struktur des Graphen. Beim Zuweisen von Flugzeugen zu Flügen ist der resultierende Konfliktgraph beispielsweise ein Intervallgraph, sodass das Farbproblem effizient gelöst werden kann. Bei der Bandbreitenzuweisung für Radiosender ist der resultierende Konfliktgraph ein Einheitsdiskgraph, sodass das Farbproblem 3-approximierbar ist.</p>
+
+                <h3>Registerzuteilung</h3>
+                <p align="justify">Ein Compiler ist ein Computerprogramm, das eine Computersprache in eine andere übersetzt. Um die
+                    Ausführungszeit des resultierenden
+                    Codes zu verbessern, ist eine der Techniken der Compiler-Optimierung die Registerzuweisung, bei der
+                    die am häufigsten verwendeten Werte
+                    des kompilierten Programms in den schnellen Prozessorregistern gespeichert werden. Idealerweise
+                    werden Werte Registern zugewiesen,
+                    sodass sie bei ihrer Verwendung alle in den Registern gespeichert werden können.</p>
+                <p align="justify">Der Lehrbuchansatz für dieses Problem besteht darin, es als ein Färbungsproblem zu
+                    modellieren. Der Compiler erstellt
+                    einen Interferenzgraph, wobei Vertices Variablen sind und eine Kante zwei Vertices verbindet, wenn
+                    sie gleichzeitig benötigt werden.
+                    Wenn der Graph mit k Farben gefärbt werden kann, kann jeder Satz von Variablen, der gleichzeitig
+                    benötigt wird, in höchstens
+                    k Registern gespeichert werden.</p>
+                <h3>Sudoku-Puzzle</h3>
+                <p align="justify">Das Sudoku-Puzzle ist zu einem sehr beliebten Puzzle geworden. Das Rätsel besteht aus einem 9×9-Gitter, in dem einige der Einträge des Gitters eine Zahl von 1 bis 9 haben. Das Ausfüllen der Tabelle mit den Zahlen muss diesen Regeln folgen: Zahlen in Zeilen werden nicht wiederholt. Zahlen in Spalten werden nicht wiederholt. Zahlen in 3×3 Blöcken werden nicht wiederholt. Die Reihenfolge der Zahlen beim Ausfüllen ist nicht wichtig.
+                </p>
+                <p align="justify">Der Graph hat 81 Knoten, wobei jeder Knoten einer Zelle im Gitter entspricht. Zwei verschiedene Knoten werden benachbart sein, wenn und nur dann, wenn sich die entsprechenden Zellen im Gitter entweder in der gleichen Zeile oder in der gleichen Spalte oder im gleichen Unterraster befinden. Jedes abgeschlossene Sudoku-Feld entspricht dann einer k-Färbung des Graphen. Es wird ein n2 ×n2 Gitter betrachtet. Jeder Zelle im Gitter wird ein Knoten mit der Bezeichnung (i, j)
+                <br /> 1 ≤ i, j ≤ n2 zugeordnet. Zwei Ecken (i, j) und (i′, j′) liegen nebeneinander, wenn [i= i′] oder [j = j′] oder [i/n]= [i′/n] und [j/n]= [j′/n].
+                </p>
+                <img src="images/sudokuBs.png" alt="sudoku" />
+            </div>
+        </div>
+    </div>
+    <End Anwendung  -->
+	
+	
+    <!--  Start Algorithmen  >
+    <div class="algorithmen">
+        <div class="container">
+            <div class="myHeading">
+                <h2>Algorithmen</h2>
+
+                <h3 class="exakt">Exakte Algorithmen</h3>
+                <p align="justify">Exakte Algorithmen bestimmen immer die optimale Lösung für ein Rechenproblem, vorausgesetzt, sie haben zu viel Zeit. Eine Möglichkeit, NP-vollständige Probleme, wie das Färbungsproblem exakt zu lösen, besteht darin, den Lösungsraum gründlich zu durchsuchen.</p>
+
+                <h4>Backtracking Algorithmus</h4>
+                <p align="justify">Bei Backtracking handelt es sich um eine allgemeine Methode, mit der eine optimale Lösung (oder möglicherweise alle optimalen Lösungen) für ein Berechnungsproblem wie das Färbungsproblem ermittelt werden kann. Backtracking-Algorithmen bauen systematisch Teillösungen zu Komplettlösungen auf. Sobald jedoch während dieses Konstruktionsprozesses Beweise dafür vorliegen, dass es keine Möglichkeit gibt, die aktuelle Teillösung zu vervollständigen, um eine optimale Lösung zu erhalten, wird der Algorithmus zurückverfolgt, um geeignete Möglichkeiten zum Anpassen der aktuellen Teillösung zu finden. </p>
+                <img src="images/Backtrack1.png" width="650" height="500" />
+
+                <h4>Lineare Programmierung Algorithmus</h4>
+                <p align="justify">Die erste Nebenbedingung besagt, dass jede Ecke genau eine Farbe zugeordnet bekommt.
+                    Die nächste Bedingung verknüpft die beiden Arten von Variablen, eine Ecke
+                    kann nur dann mit Farbe k gefärbt werden, falls Yk = 1 gilt. Die dritte Bedingung
+                    stellt sicher, dass benachbarte Ecken verschiedene Farben bekommen. Zum Schluss
+                    wird sichergestellt, dass die Variablen nur die Werte 0 und 1 annehmen können.</p>
+                <img src="images/LP1.png" width="550" height="250" />
+
+                <h3 class="heuristi">Heuristike Algorithmen</h3>
+                <p align="justify">Eine heuristische Technik ist ein Ansatz zur Problemlösung oder Selbstfindung, bei dem eine praktische Methode angewendet wird, die nicht garantiert, optimal und perfekt zu sein, sondern ausreicht, um ein unmittelbares Ziel zu erreichen. Ist es unmöglich oder unpraktisch, eine optimale Lösung zu finden, so können heuristische Methoden eingesetzt werden, um die Suche nach einer zufriedenstellenden Lösung zu beschleunigen.</p>
+
+                <h4>Greedy Algorithmus</h4>
+                <p align="justify">Der GREEDY-Algorithmus ist einer der einfachsten, aber grundlegendsten heuristischen Algorithmen für das Färbungsproblem. Der Algorithmus nimmt die Knoten nacheinander in einer (möglicherweise willkürlichen) Reihenfolge und weist jedem Knoten seine erste verfügbare Farbe zu. Da es sich um einen heuristischen Algorithmus handelt, sind die von ihm erzeugten Lösungen möglicherweise nicht optimal.</p>
+                <img src="images/Greedy.png" width="550" height="300" />
+
+                <h4>Largest First Algorithmus</h4>
+                <p align="justify">Der Largest First (LF) Algorithmus ist einer der ältesten und einfachsten Algorithmen zum sequentiellen Färbungsproblem. Die Methode basiert auf der Beobachtung, dass Knoten mit geringem Grad eine flexiblere Farbwahl ermöglichen. Infolgedessen müssen die Knoten mit hohem Grad zuerst eingefärbt werden. Die LF-Methode kann so implementiert werden, dass sie in O (m + n) Zeit läuft.</p>
+                <img src="images/LF.png" width="550" />
+
+                <h4>DSATUR Algorithmus</h4>
+                <p align="justify">Der DSATUR-Algorithmus (abgekürzt als "degree of saturation") wurde ursprünglich von Brélaz (1979) vorgeschlagen. Im Wesentlichen ist es dem GREEDY-Algorithmus sehr ähnlich, da es jeden Knoten nach einer bestimmten Reihenfolge abwechselt und ihn dann der ersten geeigneten Farbklasse zuordnet, wobei bei Bedarf neue Farbklassen erstellt werden. Der Unterschied zwischen den beiden Algorithmen liegt in der Art und Weise, wie diese Knotenreihenfolgen erzeugt werden. Bei GREEDY wird die Bestellung vor dem Färben festgelegt. Andererseits wird für den DSATUR-Algorithmus die Wahl, welcher Knoten als Nächstes gefärbt werden soll, heuristisch auf der Grundlage der Eigenschaften der aktuellen Teilfärbung des Graphen entschieden. Diese Auswahl basiert hauptsächlich auf dem Sättigungsgrad der Eckpunkte, der wie folgt definiert ist:</p>
+                <img src="images/dSatur.png" width="550" />
+
+                <h4>Recursive Largest First Algorithmus</h4>
+                <p align="justify">Der RLF-Algorithmus wurde ursprünglich von Leighton (1979) entwickelt, teilweise zur Erstellung von Lösungen für große Zeitplanprobleme. Das Verfahren funktioniert, indem es einen Graphen mit einer Farbe nach dem anderen einfärbt, und nicht einem Knoten nach dem anderen. In jedem Schritt identifiziert der Algorithmus mithilfe von Heuristiken eine unabhängige Gruppe von Knoten im Graphen, die dann derselben Farbe zugeordnet werden. Diese unabhängige Menge wird folglich aus dem Graphen entfernt. Der Vorgang wird auf dem resultierenden kleineren Teilgraphen wiederholt. Dieser Vorgang wird fortgesetzt, bis der Untergraph leer ist. An diesem Punkt sind alle Knoten eingefärbt. Es existiert somit eine praktikable Lösung. Leighton (1979) hat bewiesen, dass RLF im schlimmsten Fall O (n^3) ist, was einen höheren Rechenaufwand verursacht als die Algorithmen O (n^2) GREEDY und DSATUR. Dieser Algorithmus ist jedoch natürlich immer noch polynomial begrenzt.</p>
+                <img src="images/RLF.png" width="650"/>
+
+                <h4>Welsh Powell Algorithmus</h4>
+                <p align="justify">Der WP Algorithmus ist ein effizienter Algorithmus zur Einfärbung von Graph G. Dieser Algorithmus gibt uns nur die obere Schranke der chromatischen Zahl von G. Daher wird nicht immer die Anzahl der Mindestfarben angegeben, die beim Färben von Graphen benötigt werden. Für den gegebenen Graph G wird die Menge der Knoten als V = {V_1, V_2, ......, V_n} und die Menge der Farben der Knoten als 𝑹 = {c_1, c_2, …, c_k} beschrieben.</p>
+                <img src="images/WP.png" width="550" />
+
+                <h4>Depth-first search</h4>
+                <p align="justify">Der DFS-Algorithmus geht von einem Knoten v aus. Nachdem er den Knoten gefärbt hat, durchläuft er ihn und färbt dessen benachbarten Knoten (z.B. x), der vorher nicht besucht wurde. Er markiert ihn als „besucht“ und „gefärbt“ und fährt mit dem benachbarten Knoten von x fort. Wenn der DFS-Algorithmus an einem Knoten darauf stößt, dass alle benachbarten Knoten besucht werden, zieht er sich zurück, bis er den ersten Knoten mit einem benachbarten Knoten findet, der noch nie zuvor durchlaufen wurde. Anschließend färbt er diesen Knoten. Durchquert er ihn, so fährt er mit dessen benachbarten Knoten fort, bis er alle Knoten färbt und wieder zurückkehren muss. Auf diese Weise durchquert er alle Knoten, die ab dem anfänglichen Knoten v erreichbar sind. Das Konzept besteht darin, alle Nachbarknoten eines Nachbarknoten zu besuchen und zu färben, bevor die anderen Nachbarknoten besucht werden.</p>
+                <img src="images/DFS.png" width="550" />
+
+                <h4>Breadth-first search</h4>
+                <p align="justify">Die Breitensuche (BFS) beginnt auf der Start-Ebene 0 Knoten X des Graphen G. Anschließend werden alle Knoten besucht und gefärbt, die die Nachbarn von X sind. Nach dem Besuch werden die Knoten als „besucht“ und „gefärbt“ markiert und in Level-1 platziert. Dann werden mit den Level-1-Knoten begangen und die gleiche Methode auf jeden Level-1-Vertex und so weiter angewandt. Die BFS-Traversal endet, wenn jeder Knoten des Graphen besucht und gefärbt wurde.</p>
+                <img src="images/BFS.png" width="550"/>
+            </div>
+        </div>
+    </div -->
+
+    <footer class="bd-footer text-muted">
+        <div class="container">
+            <ul class="bd-footer-links">
+                <!-- li><a href="https://github.com/ychakr2s/WebAbschlussRepository">GitHub</a></li>
+                <li><a href="#">About</a></li -->
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="/impressum">Impressum</a></li>
+
+            </ul>
+            <p>Entworfen und gebaut mit all der Liebe der Welt von @Yassine Chakri.</p>
+        </div>
+    </footer>
+</div>
+
+<script src="js/jquery-3.4.0.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+<script language="javascript" type="text/javascript">
+    //<![CDATA[
+    $(document).ready(function () {
+//  End Change the Color if the link is clicked //
+        var matrix = [];
+
+        $("#grid").fadeIn(900);
+        var header = document.getElementById("myDIV");
+        var btns = header.getElementsByClassName("nav-item");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+
+        console.log("Salam i am from Ready jQuery: ", matrix);
+    });
+
+    //]]>
+
+</script>
+<!--noch weiter-->
+</body>
+</html>
