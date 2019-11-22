@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="37bef9dd-7014-4d54-96be-c550dbeb7a4e" name="Default Changelist" comment="" />
+    <list default="true" id="37bef9dd-7014-4d54-96be-c550dbeb7a4e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Kontakt.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Kontakt.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +18,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -23,6 +29,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1TkIE1rrGp3ns8PSz3caN1yEw7T" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
@@ -81,11 +88,26 @@
       <workItem from="1573997554492" duration="1440000" />
       <workItem from="1573999013913" duration="188000" />
       <workItem from="1573999218392" duration="4888000" />
-      <workItem from="1574004977449" duration="2955000" />
+      <workItem from="1574004977449" duration="3629000" />
+      <workItem from="1574068670335" duration="635000" />
+      <workItem from="1574412416579" duration="1988000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
